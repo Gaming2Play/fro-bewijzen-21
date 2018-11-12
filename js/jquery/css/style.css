@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  text-align: center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  /* Voor de animatie in JQuery */
+  position: relative;
+  
+}
+
+@media screen and (min-width: 1200px){
+ main {
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+}
+
+@media screen and (max-width: 800px){
+ main {
+   grid-template-columns: 1fr;
+ }
+}
